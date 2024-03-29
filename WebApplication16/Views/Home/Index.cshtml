@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model string
+<div class="text-center">
+    <h2 class="display-4">Logging with filters</h2>
+    <span>
+        <form method="post">
+            <button class="btn btn-outline-primary" type="submit" asp-controller="Home" asp-action="ViewMethods">View methods' log</button>
+            <button class="btn btn-outline-primary" type="submit" asp-controller="Home" asp-action="ViewUsers">View users' log</button>
+        </form>
+    </span>
+    <br />
+    <p class="text-muted" style="width:50%; margin:auto">@Model</p>
+</div>
